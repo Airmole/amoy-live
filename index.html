@@ -18,6 +18,10 @@
 </head>
 <body>
 <div id="app" style="text-align: center;">
+    <div class="top">
+        <span>厦门户外直播</span>
+        <div style="float: right;"><a href="preview.html">单选画面</a></div>
+    </div>
     <div :key="index" class="item" v-for="(item, index) in live_streams">
         <div>{{ item.title }}</div>
         <live-player :id="index" :video-url="item.url" controls live stretch></live-player>
